@@ -49,6 +49,59 @@
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
       }
 
+      .rectangle h3,
+      .rectangle h6,
+      .rectangle li {
+        margin-bottom: 20px; /* Add space between each text */
+      }
+
+      .rectangle {
+        background-color: rgb(255, 253, 208);
+        border-radius: 20px;
+        padding: 20px;
+        margin-bottom: 20px;
+        text-align: justify;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        border: 2px solid black; /* Add a border around the rectangles */
+      }
+
+      .rectangle img {
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        margin: 0 auto; /* Centers the image horizontally */
+        border-radius: 20px; /* Adds curved edges to the image */
+        border: 2px solid black; /* Adds a stroke to the image */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adds a drop shadow */
+      }
+
+      .menu-rectangle {
+        background-color: rgb(46, 139, 87);
+        border: 4px solid black;
+        border-radius: 20px;
+        padding: 20px;
+        text-align: center;
+        overflow: hidden;
+        margin-top: 20px;
+      }
+
+      .menu-text {
+        color: white;
+        display: inline-block;
+        margin-left: 100%; /* Start off screen */
+        animation: moveMenuText 10s linear infinite; /* Animation */
+      }
+
+      /* Animation */
+      @keyframes moveMenuText {
+        0% {
+          margin-left: 100%; /* Start off screen */
+        }
+        100% {
+          margin-left: -100%; /* Move to left */
+        }
+      }
+
       body {
         background-color: rgb(60, 179, 113);
       }
@@ -174,44 +227,64 @@
     <!-- Line to separate carousel from content below -->
     <hr style="margin: 0; border-top: 4px solid black" />
 
-    <!-- Three evenly spaced rectangles with text -->
+    <!-- Three evenly spaced rectangles with text and image -->
     <div class="container mt-5">
       <div class="row">
         <div class="col-lg-4">
           <div class="rectangle">
             <h3>Waste Into Taste</h3>
             <h6>Transforming surplus into delicious meals.</h6>
-            <li>
+            <p>
               Experience the culinary creativity of our chefs as they turn
               surplus ingredients into mouthwatering dishes, reducing food waste
               one meal at a time.
-            </li>
+            </p>
+            <img
+              src="https://images.pexels.com/photos/1093837/pexels-photo-1093837.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Image description"
+            />
+            <!-- Add your image here -->
           </div>
         </div>
         <div class="col-lg-4">
           <div class="rectangle">
             <h3>Pay As You Feel</h3>
             <h6>Your generosity fuels our mission.</h6>
-            <li>
+            <p>
               Our unique payment model allows you to contribute what you can,
               ensuring everyone has access to nutritious meals while supporting
               our efforts to combat food waste in our community.
-            </li>
+            </p>
+            <img
+              src="https://images.pexels.com/photos/1034940/pexels-photo-1034940.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Image description"
+            />
+            <!-- Add your image here -->
           </div>
         </div>
         <div class="col-lg-4">
           <div class="rectangle">
             <h3>Join The Cause</h3>
             <h6>Be part of something bigger.</h6>
-            <li>
+            <p>
               Get involved by volunteering your time, making a donation, or
               spreading the word about our mission. Together, we can make a
               meaningful difference in the fight against food waste and food
               insecurity.
-            </li>
+            </p>
+            <img
+              src="https://images.pexels.com/photos/2382894/pexels-photo-2382894.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Image description"
+            />
+            <!-- Add your image here -->
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- Rectangle with "VIEW MENU" text moving from right to left -->
+    <div class="menu-rectangle">
+      <div class="menu-text">VIEW MENU</div>
     </div>
   </body>
 </html>
