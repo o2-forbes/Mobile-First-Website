@@ -19,8 +19,8 @@
       }
 
       .navbar-custom {
-        background-color: green;
-        border-bottom: 4px solid rgb(255, 253, 208);
+        background-color: rgb(46, 139, 87);
+        border-bottom: 4px solid black;
         padding-top: 10px;
         padding-bottom: 10px;
       }
@@ -40,13 +40,17 @@
         margin-right: 20px;
       }
 
-      .container {
+      .rectangle {
         background-color: rgb(255, 253, 208);
+        border-radius: 20px;
         padding: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
       }
 
       body {
-        background-color: green;
+        background-color: rgb(60, 179, 113);
       }
     </style>
   </head>
@@ -168,22 +172,46 @@
     </div>
 
     <!-- Line to separate carousel from content below -->
-    <hr style="margin: 0; border-top: 4px solid rgb(255, 253, 208)" />
+    <hr style="margin: 0; border-top: 4px solid black" />
 
-    <!-- Restaurant Description -->
-    <div class="container mt-4">
-      <h2>Welcome to Heaven's Harvest</h2>
-      <p>
-        Heaven's Harvest is a delightful blend of flavors and experiences. Our
-        menu is carefully crafted to bring you the best of local and
-        international cuisine. Whether you're looking for a quick bite or a
-        leisurely dining experience, we have something for everyone.
-      </p>
-      <p>
-        Join us and indulge in a culinary journey that will tantalize your taste
-        buds and leave you craving for more. Our friendly staff and inviting
-        ambiance ensure that your time with us is nothing short of heavenly.
-      </p>
+    <!-- Three evenly spaced rectangles with text -->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="rectangle">
+            <h3>Waste Into Taste</h3>
+            <h6>Transforming surplus into delicious meals.</h6>
+            <li>
+              Experience the culinary creativity of our chefs as they turn
+              surplus ingredients into mouthwatering dishes, reducing food waste
+              one meal at a time.
+            </li>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="rectangle">
+            <h3>Pay As You Feel</h3>
+            <h6>Your generosity fuels our mission.</h6>
+            <li>
+              Our unique payment model allows you to contribute what you can,
+              ensuring everyone has access to nutritious meals while supporting
+              our efforts to combat food waste in our community.
+            </li>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="rectangle">
+            <h3>Join The Cause</h3>
+            <h6>Be part of something bigger.</h6>
+            <li>
+              Get involved by volunteering your time, making a donation, or
+              spreading the word about our mission. Together, we can make a
+              meaningful difference in the fight against food waste and food
+              insecurity.
+            </li>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
