@@ -68,8 +68,23 @@
         margin-bottom: 20px; 
       }
 
+      .image-stroke {
+    border: 2px solid #000;
+}
+
+
       .rectangle {
         background-color: rgb(255, 253, 208);
+        border-radius: 20px;
+        padding: 20px;
+        margin-bottom: 20px;
+        text-align: justify;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        border: 2px solid black; 
+      }
+
+      .rectangle-anime {
+        background-color: rgb(46,139,87);
         border-radius: 20px;
         padding: 20px;
         margin-bottom: 20px;
@@ -109,6 +124,18 @@
   color: rgb(255, 253, 208);
 
   animation: zoomIn; 
+  animation-duration: 2s; 
+}
+
+.special-text {
+  font-size: 48px;
+  font-family: "Henderson Slab Basic SemiBold";
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-top: -10px; 
+  color: rgb(255, 253, 208);
+
+  animation: bounceIn; 
   animation-duration: 2s; 
 }
 
@@ -221,30 +248,69 @@
     </div>
   </div>
 
- <!-- Large title -->
+<!-- Images with text -->
+<div class="container mt-4 rectangle-anime">
+
+    <!-- Large title -->
+<div class="container text-center mt-2">
+    <h1 class="special-text">Seafood Saturday!</h1>
+</div>
+    <div class="row">
+        <!-- Image on the left, text on the right -->
+        <div class="col-lg-6">
+            <img src="https://images.pexels.com/photos/699953/pexels-photo-699953.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-fluid rounded image-stroke" alt="Image 1">
+        </div>
+        <div class="col-lg-6">
+            <div class="rectangle">
+                <h3>Special 1</h3>
+                <p>Plunge into a bowl of flavourful Prawn Ramen Delight, crafted from excess prawns and unused vegetables. Savour the abundent broth infused with spices, coupled with the tender sweetness of upcycled prawns and fresh, crunchy veggies. It's a comforting bowl of sustainability and taste in every slurp.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <!-- Image on the right, text on the left -->
+        <div class="col-lg-6 order-lg-2">
+            <img src="https://images.pexels.com/photos/262959/pexels-photo-262959.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-fluid rounded image-stroke" alt="Image 2">
+        </div>
+        <div class="col-lg-6 order-lg-1">
+            <div class="rectangle">
+                <h3>Special 2</h3>
+                <p>Dive into freshness with our Ocean Harvest Salad. Made from rescued Tilapia and surplus greens, it's a delicious celebration of sustainability. Enjoy the crispness of reinstated greens and the richness of repurposed salmon, all dressed in a tangy citrus herb dressing.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Large title -->
 <div class="container text-center mt-2">
     <h1 class="welcome-text">Download</h1>
     <h1 class="harvest-text">&#8595; OUR MENU &#8595;</h1>
     <!-- Download button -->
-    <a href="images/Menu Export - Copy.png" download="menu_image.png" class="btn btn-primary btn-rounded mt-3 button-anime">&#x2022 Download Menu &#x2022</a>
+    <a href="images/Menu Export - Copy.png" download="menu_image.png" class="btn btn-primary btn-rounded mt-3 button-anime">&#x2022; Download Menu &#x2022;</a>
 </div>
 
-  <hr style="margin: 40px 0; border-top: 4px solid black; width: 100%;" />
 
- <!-- Menu Image with Lightbox -->
+<div style="background-color: rgb(32,178,170);">
+<hr style="margin: 40px 0; border-top: 4px solid black; width: 100%;" />
+<!-- Menu Image with Lightbox -->
 <div class="container mt-2"> 
     <div class="row">
-      <div class="col-lg-8 offset-lg-2 text-center">
-        <a href="images/Menu Export - Copy.png" data-lightbox="menu" data-title="Daily Changing Menu">
-          <img src="images/Menu Export - Copy.png" class="img-fluid" alt="Menu Image" style="margin-bottom: 20px;">
-        </a>
-      </div>
+        <div class="col-lg-8 offset-lg-2 text-center">
+            <a href="images/Menu Export - Copy.png" data-lightbox="menu" data-title="Daily Changing Menu">
+                <img src="images/Menu Export - Copy.png" class="img-fluid" alt="Menu Image" style="margin-bottom: 20px;">
+            </a>
+        </div>
     </div>
-  </div>
+</div>
+</div>
 
 
   </body>
 </html>
+
+<!-- Separator line below the rectangles -->
+<hr style="margin: 0px 0; border-top: 4px solid black; width: 100%;" />
 
 <div style="background-color: rgb(143,188,143);">
 
