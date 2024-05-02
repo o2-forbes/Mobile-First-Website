@@ -95,7 +95,7 @@ font-style: normal;
   color: rgb(255, 253, 208);
 }
 
-.btn-primary {
+  .btn-primary {
     background-color: #007bff;
     border-color: #007bff;
     color: #fff;
@@ -118,10 +118,16 @@ font-style: normal;
   .btn {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     transition: 0.3s;
+
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
   }
 
   .btn:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
   }
 
 
