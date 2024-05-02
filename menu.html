@@ -13,6 +13,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Lightbox CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+
+  <!-- Lightbox JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
     <style>
       .carousel-item img {
         width: 100%;
@@ -86,7 +96,7 @@
   letter-spacing: 2px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
-  animation: zoomInLeft; 
+  animation: zoomIn; 
   animation-duration: 2s; 
 }
 
@@ -98,9 +108,15 @@
   margin-top: -10px; 
   color: rgb(255, 253, 208);
 
-  animation: zoomInRight; 
+  animation: zoomIn; 
   animation-duration: 2s; 
 }
+
+.button-anime{
+    animation: zoomIn; 
+  animation-duration: 2s; 
+}
+
 
   .btn-primary {
     background-color: rgb(65,105,225);
@@ -204,17 +220,28 @@
       </div>
     </div>
   </div>
-  
-  <!-- Menu Image -->
-  <div class="container mt-2"> 
+
+ <!-- Large title -->
+<div class="container text-center mt-2">
+    <h1 class="welcome-text">Download</h1>
+    <h1 class="harvest-text">&#8595; OUR MENU &#8595;</h1>
+    <!-- Download button -->
+    <a href="images/Menu Export - Copy.png" download="menu_image.png" class="btn btn-primary btn-rounded mt-3 button-anime">&#x2022 Download Menu &#x2022</a>
+</div>
+
+  <hr style="margin: 40px 0; border-top: 4px solid black; width: 100%;" />
+
+ <!-- Menu Image with Lightbox -->
+<div class="container mt-2"> 
     <div class="row">
       <div class="col-lg-8 offset-lg-2 text-center">
-        <img src="images/Menu Export - Copy.png" class="img-fluid" alt="Menu Image" style="margin-bottom: 20px;">
+        <a href="images/Menu Export - Copy.png" data-lightbox="menu" data-title="Daily Changing Menu">
+          <img src="images/Menu Export - Copy.png" class="img-fluid" alt="Menu Image" style="margin-bottom: 20px;">
+        </a>
       </div>
     </div>
   </div>
 
-  
 
   </body>
 </html>
